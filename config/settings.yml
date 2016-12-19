@@ -1,0 +1,4 @@
+plugins:
+  localized_anonymous_cache_enabled:
+    default: true
+    client: true

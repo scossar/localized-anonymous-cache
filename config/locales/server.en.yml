@@ -1,0 +1,3 @@
+en:
+  site_settings:
+    localized_anonymous_cache_enabled: "Allow the anonymous cache to be localized?"
