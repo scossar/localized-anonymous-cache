@@ -24,6 +24,7 @@ class ::Middleware::AnonymousCache::Helper
   end
 
   def cache_key
+    # Todo: remove this.
     puts "CACHEKEY: ANON_CACHE_#{@env["HTTP_ACCEPT"]}_#{anonymous_locale}_#{@env["HTTP_HOST"]}#{@env["REQUEST_URI"]}|m=#{is_mobile?}|c=#{is_crawler?}|b=#{has_brotli?}"
     @cache_key ||= "ANON_CACHE_#{@env["HTTP_ACCEPT"]}_#{anonymous_locale}_#{@env["HTTP_HOST"]}#{@env["REQUEST_URI"]}|m=#{is_mobile?}|c=#{is_crawler?}|b=#{has_brotli?}"
   end
